@@ -1,7 +1,7 @@
 Diary
 =====
 
-I write my diary in emacs org-mode and use a peculiar layout. I use one file for each month and each has the following peculiar layout (the localization is German):
+I write my diary in emacs org-mode and use a peculiar layout. I use one file for each month and each has the following structure (the localization is German):
 
 ```org
 * Zusammenfassung
