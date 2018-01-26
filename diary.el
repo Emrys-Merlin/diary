@@ -44,6 +44,8 @@
 	(setq run nil))
       )
     )
+
+  (goto-char 1)
   )
 
 (defun cw-from-date (day month year)
