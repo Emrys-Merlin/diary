@@ -25,7 +25,7 @@ In order to use the package put it in your emacs load path and add
 (require 'diary)
 ```
 
-to your config file (probably `~/.emacs`). Additionally, I bind `create-diary-buffer-from-today` to some keyboard shortcut. For example you can
+to your config file (probably `~/.emacs`). Additionally, I bind `create-diary-buffer-from-today` to some keyboard shortcut. For example you can add
 
 ```elisp
 (global-set-key (kbd "C-c C-ö") 'create-diary-buffer-from-today)
