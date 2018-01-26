@@ -6,7 +6,7 @@
 ;;; Package-requires: (calendar)
 
 ;;; Commentary:
-;; This library generates the layout of my org-mode-diary (in German).  The user should mainly use "create-diary-buffer" which generates the layout for the given MONTH and YEAR or "create-diary-buffer-from-today" with takes the month and year from the current date.  As mentioned above the output is in German.  If you want to use it in another language you should search and replace the appropriate strings.
+;; This library generates the layout of my org-mode-diary (in German).  The user should mainly use "create-diary-buffer" which generates the layout for the given MONTH and YEAR or "create-diary-buffer-from-today" with takes the month and year from the current date.  These two functions are also interactive.  As mentioned above the output is in German.  If you want to use it in another language you should search and replace the appropriate strings.
 
 ;;; Code:
 
@@ -14,7 +14,8 @@
 
 (defun create-diary-buffer-from-today ()
   "Prepare a buffer as a diary taken the month and your from the current date."
-  
+
+  (interactive)
   (let ((today (calendar-current-date)) month year)
     (setq month (nth 0 today))
     (setq year (nth 2 today) )
@@ -24,6 +25,7 @@
 (defun create-diary-buffer (month year)
   "Prepare a buffer as a diary for a given MONTH and YEAR.  The Layout is my standard-layout sorted by calender week and so forth."
 
+  (interactive "nMonth: \nnYear: ")
   (insert "* Zusammenfassung\n")
   (insert "  -\n\n")
   (insert "* Wochen\n")
