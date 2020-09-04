@@ -31,5 +31,3 @@ to your config file (probably `~/.emacs`). Additionally, I bind `create-diary-bu
 (global-set-key (kbd "C-c C-ö") 'create-diary-buffer-from-today)
 ```
 to your config file to bind the command to `C-c C-ö`.
-
-This is my first emacs "library". So I would be very intersted in any comments you have concerning the file. Just leave me a message or fork it and open pull requests.
